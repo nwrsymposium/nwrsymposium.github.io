@@ -1,0 +1,106 @@
+@font-face{
+    font-family: "Cooper Black Std";
+    font-weight: 800 900;
+    src: url('../fonts/CooperBlackStd.woff2')
+}
+
+@font-face{
+    font-family: "Cooper Black Std";
+    font-weight: 800 900;
+    font-style: italic;
+    src: url('../fonts/CooperBlackStd-Italic.woff2')
+}
+
+    @font-face {
+        font-family: 'Sentient-Variable';
+        src: url('../fonts/Sentient-Variable.woff2') format('woff2');
+        font-weight: 200 700;
+        font-display: swap;
+        font-style: normal;
+    }
+
+
+
+    @font-face {
+        font-family: 'Sentient-VariableItalic';
+        src: url('../fonts/Sentient-VariableItalic.woff2') format('woff2');
+        font-weight: 200 700;
+        font-display: swap;
+        font-style: italic;
+    }
+
+:root {
+    --brand-color: rgb(232,156,71);
+    --brand-color-bright: rgb(243,124,24);
+    --brand-complement-color: rgb(111,148,163);
+    --bg-color-dark: rgb(14,22,42);
+    --bg-color:  rgb(255, 254, 241);
+
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: "Sentient", serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+section p {
+    max-width: 36rem;
+
+}
+
+h1 {
+    font-family: "Cooper Black Std";
+    font-weight: bold;
+    color: var(--brand-color-bright);
+}
+
+.dark-background {
+    background-color: var(--bg-color-dark);
+}
+
+header h1{
+    font-size: clamp(1rem, 1rem + 6vw, 6rem);
+    line-height: .9;
+    font-weight: 900;
+    padding-top: .5rem;
+}
+
+header h2 {
+    font-family: "Sentient";
+    font-weight: 200;
+    font-style: italic;
+    color: var(--brand-complement-color);
+}
+
+.event-date, .event-location {
+    font-style: normal;
+    font-weight: 900;
+}
+
+footer {
+    flex-grow: 1;
+}
+
+footer h1 {
+    color: white;
+    opacity: .2;
+    font-size: 2rem;
+}
+
+.container-wrap {
+    background-color: var(--bg-color);
+}
+
+section ul {
+
+}
+
+section li {
+    list-style: none;
+
+}

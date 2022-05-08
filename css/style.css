@@ -49,9 +49,12 @@ body {
 
 }
 
-section p {
+section p, section table {
     max-width: 36rem;
+}
 
+section img {
+    width: 100%;
 }
 
 h1 {

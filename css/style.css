@@ -49,8 +49,12 @@ body {
 
 }
 
-section p, section table {
+section p, section table.tight {
     max-width: 36rem;
+}
+
+section table {
+    max-width: 56rem;
 }
 
 section img {

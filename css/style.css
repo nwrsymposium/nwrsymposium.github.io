@@ -57,6 +57,16 @@ section table {
     max-width: 56rem;
 }
 
+.video {
+    aspect-ratio: 16 / 9;
+    max-width: 100%;
+    width: 100%;
+}
+
+::selection {
+    background: #E1A253;
+}
+
 /*adding row numbers through css*/
 .css-serial {
     counter-reset: serial-number; /* Set the serial number counter to 0 */

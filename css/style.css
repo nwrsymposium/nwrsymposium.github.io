@@ -11,23 +11,21 @@
     src: url('../fonts/CooperBlackStd-Italic.woff2')
 }
 
-    @font-face {
-        font-family: 'Sentient-Variable';
-        src: url('../fonts/Sentient-Variable.woff2') format('woff2');
-        font-weight: 200 700;
-        font-display: swap;
-        font-style: normal;
-    }
+@font-face {
+    font-family: 'Sentient-Variable';
+    src: url('../fonts/Sentient-Variable.woff2') format('woff2');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+}
 
-
-
-    @font-face {
-        font-family: 'Sentient-Variable';
-        src: url('../fonts/Sentient-VariableItalic.woff2') format('woff2');
-        font-weight: 200 700;
-        font-display: swap;
-        font-style: italic;
-    }
+@font-face {
+    font-family: 'Sentient-Variable';
+    src: url('../fonts/Sentient-VariableItalic.woff2') format('woff2');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: italic;
+}
 
 :root {
     --brand-color: rgb(232,156,71);
@@ -36,8 +34,41 @@
     --brand-complement-color-bright: #66a89e;
     --bg-color-dark: rgb(14,22,42);
     --bg-color:  rgb(255, 254, 241);
-
 }
+
+
+a {
+    color: var(--brand-complement-color-bright);
+}
+
+a:hover {
+    color: darkcyan;
+}
+
+.btn-primary {
+    background-color: var(--brand-complement-color-bright);
+    border-color: var(--brand-complement-color-bright);
+    color: var(--bg-color);
+}
+
+.btn-primary:hover {
+    background-color: darkcyan;
+    border-color: darkcyan;
+    color: var(--bg-color);
+}
+
+.btn-outline-primary {
+    border-color: var(--brand-complement-color-bright);
+    color: var(--brand-complement-color-bright);
+}
+
+
+.btn-outline-primary:hover {
+    color: var(--bg-color);
+    background-color: var(--brand-complement-color-bright);
+    border-color: var(--brand-complement-color-bright);
+}
+
 
 body {
     background-color: var(--bg-color);
@@ -46,7 +77,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
 }
 
 section p, section table.tight {
@@ -120,47 +150,17 @@ footer h1 {
     font-size: 1.5rem;
 }
 
+footer a {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: var(--brand-complement-color);
+    text-underline-offset: 3px;
+}
+
 .container-wrap {
     background-color: var(--bg-color);
 }
 
-section ul {
-
-}
-
 section li {
     list-style: none;
-
-}
-
-a {
-    color: var(--brand-complement-color-bright);
-}
-
-a:hover {
-    color: darkcyan;
-}
-
-.btn-primary {
-    background-color: var(--brand-complement-color-bright);
-    border-color: var(--brand-complement-color-bright);
-    color: var(--bg-color);
-}
-
-.btn-primary:hover {
-    background-color: darkcyan;
-    border-color: darkcyan;
-    color: var(--bg-color);
-}
-
-.btn-outline-primary {
-    border-color: var(--brand-complement-color-bright);
-    color: var(--brand-complement-color-bright);
-}
-
-
-.btn-outline-primary:hover {
-    color: var(--bg-color);
-    background-color: var(--brand-complement-color-bright);
-    border-color: var(--brand-complement-color-bright);
 }
